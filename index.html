@@ -7,17 +7,24 @@
 </head>
 <body>
     
-    test yourgpt
+    test hyperleap
 
-<script>
-    window.YGC_WIDGET_ID = "ee23dbfa-3468-422d-a4af-12c0332222a9";
-    (function() {
-      var script = document.createElement('script');
-      script.src = "https://widget.yourgpt.ai/script.js";
-      script.id = 'yourgpt-chatbot';
-      document.body.appendChild(script);
-    })();
-</script>
+
+    <script>
+        (function () {
+            // Define chatbot configuration
+            window.userChatbotConfig = {
+                chatbotId: "c2ab26af-c336-464a-b4cc-783221239ccd",
+                privateKey: "YzJhYjI2YWZjMzM2NDY0YWI0Y2M3ODMyMjEyMzljY2RfMTE2NzI=",
+            };
+            // Dynamically load chatbot plugin
+            const chatbotScript = document.createElement("script");
+            chatbotScript.src = "https://chatjs.hyperleap.ai/chatbot.min.js";
+            chatbotScript.async = true; // Load asynchronously for better performance
+            document.head.appendChild(chatbotScript);
+        })();
+    </script>
+    
 <!--End of Tawk.to Script-->
 </body>
 </html>
